@@ -56,10 +56,9 @@ public class ProcessScreen extends ScreenAdapter {
 
     final int WIDTH = 1920;
     final int HEIGHT = 1080;
-    private PanzerProject process;
     private Stage stage;
     private Skin skin;
-    private TextField velocityField;
+/*    private TextField velocityField;
     private TextField sensorField;
     private TextField angleField;
     private SelectBox<String> mapField;
@@ -71,7 +70,7 @@ public class ProcessScreen extends ScreenAdapter {
     private Texture labelTexture;
     private Image label;
     private BitmapFont font;
-    private boolean isEnableSensors = Settings.isDrawsensors();
+    private boolean isEnableSensors = Settings.isDrawsensors();*/
 
     // --------------------------------------------------------------------------------
 

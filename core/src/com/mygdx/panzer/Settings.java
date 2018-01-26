@@ -20,7 +20,7 @@ import com.badlogic.gdx.math.Vector2;
     private static int startAngle = 0;
     public static final int WORLD_WIDTH = 2048;
     public static final int WORLD_HEIGHT = 1152;
-    private static boolean drawsensors = false;
+    private static boolean drawsensors = true;
 
     public static boolean isDrawsensors() {
         return drawsensors;
