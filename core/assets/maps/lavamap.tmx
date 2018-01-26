@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="64" height="36" tilewidth="32" tileheight="32" nextobjectid="442">
+ <tileset firstgid="1" name="lavamap" tilewidth="32" tileheight="32" tilecount="960" columns="40">
+  <image source="lavamap.png" width="1280" height="768"/>
+ </tileset>
+ <layer name="grass" width="64" height="36">
+  <data encoding="base64" compression="zlib">
+   eJzdmUdyFEEQRYdp/A2we4xwN4Ab4M0N0A3wZie8dANkcDs84ga4A+DNDRBmzevFR01G1QSZUzMx0YsXIY1Sabqy8nfVTHQ7nUtwGa7AVbgG1+EGTMIUTLTU7j48gIfwCB7DE3gKz2AenrfY7i28g/fwAT7CJ/gMX+ArfGux3ZKq0+lCBUthGSyHFbASVsHqqr12m2AzbIGtMAbbYDvsgJ2wq8V2e2Ef7IcDcBAOwWE4AkfhWIvtTsBJOAWn4QychXNwHi7AxRbb3YRpmIFZmINbcBvuwF24Z+xyWtO0+87vC/ADfsIv+N31fx7Jr5edzT2imzmtadqtIdZaWAfrYQNsrPyfl9Z/m3tEN3NaI7vsWsI0zMAszAX6oV/9t7lHdDOnNbLLreUL/vYSXsFreBPok3713+Ye0c2U1uTWq4Re53xH/NncI7qZ0prceo312MP/GzfnO6L/NveIbqa0Rns75S+3N71xc33g0X+bu0c3U+uourW3U/5ye9Or180+UNwaj/7bGjz6mlpH1a21SfnL7c2IrtvnXePRf1uDR19T66i6tTYpf7m9GdF1+7wXMnY5f7YGj/6n1lF174Y9mR7J7c3Ied0+7xqP/tsaPPqfWkfVfRzGG/3Z9Jfbm5Hzun3eNR79tzV4dDi1jqp7Eqaqxf4c1HndPu9xpz9bg0f/U+uouufrPqwW+3NQ5/Xm81avefzZGiL63/xZdSsX9ecgzuuKoeetXvP4s3Mycm5O/Y9yUX8q15LndcWQb/Wax5+dk6XO13/1v/uvPvd7Xm/aKYZ8q9c8/uycLHW+Vi5Wn0ve1yuGfKvXPP7snCx1v65crD5H/aXe9RVDvjULPfpv52Sp+3XlYvU56i915lMM+Zb2ePTfzslS9+vKxepziTtAxVUM+Zb2ePTfzslS9+vKxb4PlbgDVFzFkO/I+4SdE6Xv1+37kOy8a94rrnxH8rNzovT9unKzdt41H9T9v50Tpe/XR93OzolR+R5+WHZ2TozK9/DDsrNzYlS+hx+WnZ0To/I9/LDs7D75AzrMekw=
+  </data>
+ </layer>
+ <layer name="Слой тайлов 2" width="64" height="36">
+  <data encoding="base64" compression="zlib">
+   eJztmAtOAjEQhje7N1Ci3ESJz5v4wFfiSRThBAp6BES8gI+76GJQT+A/YSdpmukCpts20C+ZmEzd7Uz/2dJOkkQikUgkYodumiQ92H3qOxL33CLnMezbQu57WZLsZ+bxDYxtloy75gU5v8LWEVPdQlzneMdFsQa9oqZUDuA/DCj/HPGNLGkvMa0efEHfO9d9zaD9FXzXsBbsBtaGdTKzX4LqYQu2HdAacM2PBM05l2dYH/YIG8CeYMMZ/b/au5vwnWTh1ALXfE3QjnPR4dxm8dO61IT/DaEWWHuKj755Xbu+pdhWivrQa4xrwResfV355ncdx7OTuZ+TWRVqs8pYBsK7T+E785R/Lux5VcYizedbf50q92VpvtD05zNbFZpI+YemP0HnVKqBO8vnQOleEZr+zAPG3mDvltYgN9wrQtSfoH3AZmzSbw3hU3+CziCXhvOZi9h86s80DfO7iM23/oRpH/hvbGr/iP+ODXOEoL9pH5gntq6W66w9hEXR/0vZ3/V9vqwnELL+NmgXPYGfdHLfVf0dR3vsND4Q22dJ/0Pv202Dn+Pc6U5Ne6zaKyJ/w9Bf8AHd0dU1UHs/8zLUcme4r9BQcj8OJH8dU+/HxvNH2cRCzN3U++FvpKwPulY81xeeXxTK+p3LxjLmHAmLPy26kRw=
+  </data>
+ </layer>
+ <layer name="Слой тайлов 3" width="64" height="36">
+  <data encoding="base64" compression="zlib">
+   eJzt2MdOAlEYhuEBdsadBXYW1JuwwM56C5bEAjvrHSglse5t7CzUO3BB0Z0dvQcL7OzG18iCgAuUA3MC50ueTCZhhv9bHGY4ewZN28cBDuFHADLGY9I0r0nsPU/peoZzXOASV5L2D9M9Irj/E12f8YJXvOFd0v5/yVGBn2syalozWtAKK9qMJR1NqvTStQ/9GMAghqqo/zRdZzCLOcxjQVD/Te6zhW3sFHjP/1zzW4ZZwyMYxZhO6znK/DHEsQsfUkjDxu+Y3ZR/7su6JlFEfxed3fDAK7h/Mc8hM9dZ4IDTlH8uKkE6hxBGRHD/UjyHROeazknc4LYCnmcqKnqlJnOs1XUKFRUVFf2T1HsAHfOBT72HKGNaMu+O1syxnWOHep9UUVGp0Czy334JLriz/udH9RuprPHTOYAgQkXuc2Tv5+Xu7Yna65M52XuA0Zy9vdxzFbH5Xq8xxJHAMU4Ef4dT4nehO9zjAY9IIV3kPVdy+m5I3L+O2erRgEaYYZF4XtHppGsXutEDG+xV1H+crhOYxBQcBrnXq+gsG37W6yrWsG6Qe72qqJQ7XyDRYc4=
+  </data>
+ </layer>
+ <layer name="Копия Слой тайлов 3" width="64" height="36">
+  <data encoding="base64" compression="zlib">
+   eJzt2MlOwlAYhuEOO+POAXZqjN6EA+z0JhwSB9jpTSgkjnsnds7CHbAooDuHRPQeHGDnkGh8FxiaYiLIaXuw50ueNE1oOR9NS/rv65p2gEMc4RgnkDEJU9OSpthzXtL1Cte4wQQmMYVpyX6HNN0zgvu/0PEVb3jHEpaRQFKy/o0kW+fnegxN6zWq1/0UZ0gj08L9680Y3ceN6nW/RRF3uA9A/wW6LxruXPctzruNHewa7h0jIm5cd4v155DHHlIooYwIz7GoWbufsh1T8LB/I2nmfyjEcWHEEDdr91shbvwPqaioyJm2yrbd11WoqKio+J+i3wvwMR/49HsRHqav8i7UX9kOsB0MwHuxikpQI/MM2Iv8lxnwXyNyFmif5/002/Nj1vdbRM4C7TNAyzHbc+6riI2FHPIo4BwXgr8jLvHz4QGPeMIzSig3cb4Vuq46+m5K3L+DtXWiC90IISzxekVniK7DGMEoIogGqP8MXWcxh3nEdLnvV9H5vl/XsI4NXe77VUXF63wB2k5mhA==
+  </data>
+ </layer>
+ <layer name="Слой тайлов 4" width="64" height="36">
+  <data encoding="base64" compression="zlib">
+   eJztz8cNwlAABNFvmyRRCZlaiL0QigJMaIVMKYwL4GhZ4s+T5r4bgiRJksq2S0LY04FyOtKJznRJql5Xvisfb3SnBz3pRW/6RPA/SUNIKaMa1alBTWqlVa8rX4ePXepRnwY0pBGNI/hfmPBzSjOa04KWkXwvrPi6pg1tI/r9SzureoEkSZIkSZKkf/MF88cSTA==
+  </data>
+ </layer>
+ <layer name="Слой тайлов 7" width="64" height="36">
+  <data encoding="base64" compression="zlib">
+   eJzt07EJACAMRcFAxtH957O0tJIouZvg5UMiAICTkREzqyt2R0XPaxsA93X/t+73AwAAAADwjwUXfgKM
+  </data>
+ </layer>
+ <layer name="Слой тайлов 7" width="64" height="36">
+  <data encoding="base64" compression="zlib">
+   eJzt1zdWQgEURdH/SxXtMaAI2JuYhxgwz0MFFdM8MKPoPBQx4zzMYlqcKdC819yz1u5ve4NAKaWU8mkMGYxjApOYQhbTjrusWsIyVpBDHqtYw7rfLLOK2MUe9nGAQxzh2HGXVRe4RAVXqOIaN7h13GXVM17wije84wOf+HLcZVU0DIJOdKEbPYihF32h9zqllFLKtxa0og0RtKPDdZFtgxjCMEYwirTrIttmMIs5zGMBi66LbCtgA5vYwjZ2XBfZVsIJTlHGGc5dF9l2h3s84BE1PLkusq2Ob/zgF3/4d11kW5wv2I8EkkhhQP9QKaWUUko1UQM5UDEP
+  </data>
+ </layer>
+ <layer name="Слой тайлов 8" width="64" height="36">
+  <data encoding="base64" compression="zlib">
+   eJztz8kNwjAABVGnBsLSSwjQC2HphbD0xNpLCFAC0wE3G8nzpLn/H4IkSZIkSZIkSZL025kudKUb3emRdFFcHT2ppxe96ZN0UVyDIoSShjSiMU2K1Kviqfg6pZpmNKdFRv+XfG1oRWva0Daj/zu+trSnAx3plNF/Sf/vC0YREe8=
+  </data>
+ </layer>
+ <objectgroup name="obstacles">
+  <object id="370" x="169" y="765">
+   <polygon points="0,0 56,-20 120,6 118,53 84,90 35,87 -11,52"/>
+  </object>
+  <object id="392" x="1095" y="831">
+   <polygon points="0,0 40,-22 142,-53 276,-64 252,70 144,180 25,180"/>
+  </object>
+  <object id="394" x="1366" y="452">
+   <polygon points="0,0 -11,-28 94,-134 204,-63 208,-7"/>
+  </object>
+  <object id="395" x="1374" y="6">
+   <polygon points="0,0 0,42 46,61 69,37 35,-11"/>
+  </object>
+  <object id="410" x="500" y="444">
+   <polygon points="-10,-8 -8,246 66,480 144,560 248,560 304,484 288,356 282,222 204,114 148,-4"/>
+  </object>
+  <object id="412" x="494" y="436">
+   <polygon points="0,0 136,-192 322,-254 422,-76 224,4"/>
+  </object>
+  <object id="413" x="824" y="186">
+   <polygon points="0,0 412,-12 360,214 108,208"/>
+  </object>
+  <object id="414" x="1230" y="180">
+   <polygon points="0,0 232,136 132,254 -44,202"/>
+  </object>
+  <object id="415" x="1374" y="466">
+   <polygon points="0,0 -24,296 -34,442 84,516 144,500 216,404 216,-20 28,-52"/>
+  </object>
+  <object id="419" x="1735" y="246">
+   <polygon points="0,0 14,-52 44,-84 100,-64 120,-18 106,20 52,38 2,22"/>
+  </object>
+  <object id="423" x="1782" y="900">
+   <polygon points="0,0 -12,74 12,126 100,144 169,25 138,-20 60,-24"/>
+  </object>
+  <object id="424" x="-2" y="-54">
+   <polygon points="0,0 0,1300 -36,1302 -22,-2"/>
+  </object>
+  <object id="425" x="-16" y="1156">
+   <polygon points="0,0 2076,-4 2076,44 1.99808,40"/>
+  </object>
+  <object id="426" x="2048" y="1162">
+   <polygon points="0,0 0,-1208 20,-1210 28,8"/>
+  </object>
+  <object id="427" x="2050" y="-4">
+   <polygon points="0,0 -2050,-3.51515 -2050,-50.9697 -11.9883,-58"/>
+  </object>
+  <object id="428" x="700" y="268">
+   <polygon points="0,0 0,-62 96,-94 124,-92 146,-66"/>
+  </object>
+  <object id="432" x="62" y="240">
+   <polygon points="0,0 26,-34 26,-248 -61,-242 -61,1"/>
+  </object>
+  <object id="433" x="92" y="207">
+   <polygon points="-6,1 59,9 84,-24 83,-213 -12,-208"/>
+  </object>
+  <object id="434" x="173" y="149">
+   <polygon points="0,0 63,2 70,-164 -32,-157"/>
+  </object>
+  <object id="436" x="940" y="366">
+   <polygon points="0,0 0,68 111,111 225,67 223,1"/>
+  </object>
+  <object id="437" x="673" y="500">
+   <polygon points="0,0 62,-72 -48,-97"/>
+  </object>
+  <object id="438" x="786" y="786">
+   <polygon points="0,0 103,36 45,157 5,141"/>
+  </object>
+  <object id="439" x="886" y="826">
+   <polygon points="0,0 -56,119 -56,163 -33,193 119,243 188,230 254,192 213,2 177,-12 32,-11"/>
+  </object>
+  <object id="441" x="738" y="988">
+   <polygon points="0,0 38,28 124,10 170,-82 138,-142 70,-166 -14,-182 -42,-94 -32,-26"/>
+  </object>
+ </objectgroup>
+</map>
