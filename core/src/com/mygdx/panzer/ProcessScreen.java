@@ -91,6 +91,8 @@ public class ProcessScreen extends ScreenAdapter {
         skin = new Skin(Gdx.files.internal("HUD/uiskin.json"));
         skin.getFont("default-font").getData().setScale(2);
 
+        // -------------------------------------------------------------------------------------------------------------
+
         this.game = game;
         shapeRenderer = new ShapeRenderer();
         camera = new OrthographicCamera();
