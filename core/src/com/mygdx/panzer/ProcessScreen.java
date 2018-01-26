@@ -41,24 +41,27 @@ public class ProcessScreen extends ScreenAdapter {
     }
 
     private PanzerProject game;
-    private SpriteBatch batch;
     private MapManager mapManager;
 
     private OrthogonalTiledMapRenderer mapRenderer;
-    private OrthographicCamera camera;
     private ShapeRenderer shapeRenderer;
-    private FitViewport viewport;
 
     private PanzerHUD hud;
     public Panzer panzer;
 
-    // --------------------------------------------------------------------------------
+    /*
+    --------------------------------------------------------------------------------------------------------------------
+     */
 
     final int WIDTH = 1920;
     final int HEIGHT = 1080;
+    private OrthographicCamera camera;
+    private SpriteBatch batch;
+    private FitViewport viewport;
     private Stage stage;
     private Skin skin;
-/*    private TextField velocityField;
+    /*private TextField velocityField;
+    private PanzerProject process;
     private TextField sensorField;
     private TextField angleField;
     private SelectBox<String> mapField;
@@ -72,20 +75,11 @@ public class ProcessScreen extends ScreenAdapter {
     private BitmapFont font;
     private boolean isEnableSensors = Settings.isDrawsensors();*/
 
-    // --------------------------------------------------------------------------------
+    /*
+    --------------------------------------------------------------------------------------------------------------------
+     */
 
     public ProcessScreen(PanzerProject game) {
-        this.game = game;
-        shapeRenderer = new ShapeRenderer();
-        camera = new OrthographicCamera();
-        camera.position.set(Settings.WORLD_WIDTH / 2, Settings.WORLD_HEIGHT / 2, 0);
-        camera.update();
-        viewport = new FitViewport(Settings.WORLD_WIDTH, Settings.WORLD_HEIGHT, camera);
-        viewport.apply(true);
-        batch = new SpriteBatch();
-        game.setProcessState(ProcessState.PAUSE);
-
-        // --------------------------------------------------------------------------------
 
         camera = new OrthographicCamera();
         camera.position.set(WIDTH / 2, HEIGHT / 2, 0);
@@ -96,20 +90,29 @@ public class ProcessScreen extends ScreenAdapter {
         this.stage = new Stage(viewport, batch);
         skin = new Skin(Gdx.files.internal("HUD/uiskin.json"));
         skin.getFont("default-font").getData().setScale(2);
+
+        this.game = game;
+        shapeRenderer = new ShapeRenderer();
+        camera = new OrthographicCamera();
+        camera.position.set(Settings.WORLD_WIDTH / 2, Settings.WORLD_HEIGHT / 2, 0);
+        camera.update();
+        viewport = new FitViewport(Settings.WORLD_WIDTH, Settings.WORLD_HEIGHT, camera);
+        viewport.apply(true);
+        batch = new SpriteBatch();
+        game.setProcessState(ProcessState.PAUSE);
     }
 
     @Override
     public void show() {
         mapManager = MapManager.getInstance();
-//        Map currentMap = new Map("maps/" + Settings.getMapname() + ".tmx");
-        Map currentMap = new Map("maps/" + Settings.getMapname());
+        Map currentMap = new Map("maps/" + Settings.getMapname() /*+ ".tmx"*/);
         mapManager.setMap(currentMap);
         panzer = new Panzer(Settings.getStartAngle());
         MapManager.getInstance().setPanzer(panzer);
         mapRenderer = new OrthogonalTiledMapRenderer(mapManager.getMap().getTiledMap(), batch);
         mapRenderer.setView(camera);
         hud = new PanzerHUD(game, camera, viewport, batch);
-	}
+    }
 
     @Override
     public void render(float delta) {
