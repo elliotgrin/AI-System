@@ -12,8 +12,8 @@ public class PanzerProject extends Game {
 	public void create () {
 		Box2D.init();
         proc = new ProcessScreen(this);
-        setScreen(new MainMenuScreen(this));
-        //setScreen(proc);
+        //setScreen(new MainMenuScreen(this));
+        setScreen(proc);
 	}
 
     public ProcessScreen.ProcessState getProcessState() {

@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.maps.MapObject;
@@ -18,6 +19,11 @@ import com.badlogic.gdx.math.Ellipse;
 import com.badlogic.gdx.math.Polygon;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.ui.Image;
+import com.badlogic.gdx.scenes.scene2d.ui.SelectBox;
+import com.badlogic.gdx.scenes.scene2d.ui.Skin;
+import com.badlogic.gdx.scenes.scene2d.ui.TextField;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
@@ -46,6 +52,29 @@ public class ProcessScreen extends ScreenAdapter {
     private PanzerHUD hud;
     public Panzer panzer;
 
+    // --------------------------------------------------------------------------------
+
+    final int WIDTH = 1920;
+    final int HEIGHT = 1080;
+    private PanzerProject process;
+    private Stage stage;
+    private Skin skin;
+    private TextField velocityField;
+    private TextField sensorField;
+    private TextField angleField;
+    private SelectBox<String> mapField;
+    private Texture enableSensorsTexture;
+    private Texture disableSensorsTexture;
+    private Image enableSensors;
+    private Image applyButton;
+    private Texture applyButtonTexture;
+    private Texture labelTexture;
+    private Image label;
+    private BitmapFont font;
+    private boolean isEnableSensors = Settings.isDrawsensors();
+
+    // --------------------------------------------------------------------------------
+
     public ProcessScreen(PanzerProject game) {
         this.game = game;
         shapeRenderer = new ShapeRenderer();
@@ -56,12 +85,25 @@ public class ProcessScreen extends ScreenAdapter {
         viewport.apply(true);
         batch = new SpriteBatch();
         game.setProcessState(ProcessState.PAUSE);
+
+        // --------------------------------------------------------------------------------
+
+        camera = new OrthographicCamera();
+        camera.position.set(WIDTH / 2, HEIGHT / 2, 0);
+        camera.update();
+        viewport = new FitViewport(WIDTH, HEIGHT, camera);
+        viewport.apply(true);
+        batch = new SpriteBatch();
+        this.stage = new Stage(viewport, batch);
+        skin = new Skin(Gdx.files.internal("HUD/uiskin.json"));
+        skin.getFont("default-font").getData().setScale(2);
     }
 
     @Override
     public void show() {
         mapManager = MapManager.getInstance();
-        Map currentMap = new Map("maps/" + Settings.getMapname() + ".tmx");
+//        Map currentMap = new Map("maps/" + Settings.getMapname() + ".tmx");
+        Map currentMap = new Map("maps/" + Settings.getMapname());
         mapManager.setMap(currentMap);
         panzer = new Panzer(Settings.getStartAngle());
         MapManager.getInstance().setPanzer(panzer);
