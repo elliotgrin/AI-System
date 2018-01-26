@@ -210,7 +210,11 @@ public class PanzerHUD {
     public void render(float delta) {
         Vector2 finishpos = Settings.getFinishPos();
         batch.begin();
+
         batch.draw(finishTexture, finishpos.x - finishTexture.getWidth() / 2, finishpos.y - finishTexture.getHeight() / 2);
+
+//        batch.draw(finishTexture, 500, 500);
+
         batch.end();
         stage.act(delta);
         stage.draw();

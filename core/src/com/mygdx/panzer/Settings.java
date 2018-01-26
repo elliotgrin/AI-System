@@ -14,7 +14,7 @@ import com.badlogic.gdx.math.Vector2;
     public static final int ANGLE_LIMIT = 359;
     private static String mapname = "desertmap.tmx";
     private static Vector2 startPos = new Vector2(0, 0);
-    private static Vector2 finishPos = new Vector2(800, 600);
+    private static Vector2 finishPos = new Vector2(500, 500);
     private static int sensorRange = 100;
     private static int maxSpeed = 2;
     private static int startAngle = 0;

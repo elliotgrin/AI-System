@@ -48,7 +48,11 @@ public class Panzer {
         panzerImage = (TextureRegion) animation.getKeyFrame(frameTime);
         panzerSize = new Vector2(panzerImage.getRegionWidth(), panzerImage.getRegionHeight());
         panzerSprite = new Sprite(panzerImage);
-        Settings.setFinishPos(new Vector2(Settings.WORLD_WIDTH - panzerSize.x, Settings.WORLD_HEIGHT - panzerSize.y));
+//        Settings.setFinishPos(new Vector2(Settings.WORLD_WIDTH - panzerSize.x, Settings.WORLD_HEIGHT - panzerSize.y));
+
+        // Setting finish pos point
+        Settings.setFinishPos(new Vector2(Settings.WORLD_WIDTH - panzerSize.x, Settings.WORLD_HEIGHT / 2));
+
 
         physBody = new Polygon();
         panzerSprite.setRotation(startAngle);
